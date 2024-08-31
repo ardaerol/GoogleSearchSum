@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="google.css">
+    <link rel="icon" href="transparent-google-suite-icon-google-icon-1713858255833.webp">
+    <title>GOOGLE</title>
+</head>
+<body>
+    <div class="firstdiv">
+        <form action="https://www.google.com/search" method="GET">
+            
+            <img src="download.jpg" alt="ES">
+            <input id="search" type="text" name="q" placeholder="search">
+            <input id="submitBtn" type="submit" value="search">
+            <button type="button" id="luckyButton">I'am lucky</button>
+        </form>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search');
+
+        searchInput.addEventListener('focus', function() {
+            this.setAttribute('data-placeholder', this.getAttribute('placeholder'));
+            this.setAttribute('placeholder', '');
+        });
+
+        searchInput.addEventListener('blur', function() {
+            this.setAttribute('placeholder', this.getAttribute('data-placeholder'));
+        });
+
+        document.getElementById("luckyButton").onclick = function() {
+            var query = searchInput.value;
+            if (query) {
+                window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query) + "&btnI=1";
+            }
+        };
+    </script>
+</body>
+</html>

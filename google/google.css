@@ -1,0 +1,48 @@
+.firstdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 200px;
+}
+img{
+    width: 300px;
+}
+h1{
+    color: red;
+    margin-left: 75px;
+}
+#search{
+    width: 300px;
+    height: 20px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+#search::placeholder{
+    color: darkblue;
+    font-style: italic;
+    background: url('https://cdn-icons-png.flaticon.com/512/54/54481.png') no-repeat left 0px center;
+            background-size: 10px 10px; /* Görselin boyutu */
+            border: 0px solid #ccc;
+}
+#submitBtn{
+    width: 60px;
+    height: 25px;
+    border: none;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+#luckyButton{
+    border: none;
+    height: 25px;
+    margin-left: 10px;
+}
+html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
